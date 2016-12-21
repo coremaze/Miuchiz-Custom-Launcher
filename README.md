@@ -5,5 +5,7 @@ This allows you to enable cheats before connecting to Miuchiz Reborn. This is in
 Using a cheat creates a modified version of aworld.exe as mion.exe by modifying certain bytes:
 
 Object selection: Replaces 0x000D66ED-0x000D66F2 with 0x90
+
 Noclip: Replaces 0x000FEDF0 with 0xEB
+
 Flight: Replaces 0x000FF3BF and 0x000FF426 with 0xEB 
