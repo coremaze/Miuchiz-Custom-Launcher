@@ -1,0 +1,6 @@
+#ifndef _resource_rc
+#define _resource_rc
+#include "resource.h"
+MAINICON ICON "icon.ico"
+IDI_ICON ICON "icon.ico"
+#endif

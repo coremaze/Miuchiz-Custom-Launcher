@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1482097409 source:e:\users\clockwork\desktop\c++ projects\miuchiz custom launcher\miuchiz custom launcher\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+	<cstdio>
+	<tchar.h>
+	<windows.h>
+	"resource.h"
+
+1482097461 source:e:\users\clockwork\desktop\c++ projects\miuchiz custom launcher\miuchiz custom launcher\resource.rc
+	"resource.h"
+
+1482097232 e:\users\clockwork\desktop\c++ projects\miuchiz custom launcher\miuchiz custom launcher\resource.h
+
