@@ -9,3 +9,5 @@ Object selection: Replaces 0x000D66ED-0x000D66F2 with 0x90
 Noclip: Replaces 0x000FEDF0 with 0xEB
 
 Flight: Replaces 0x000FF3BF and 0x000FF426 with 0xEB 
+
+Increase object selection limit: Replaces 0x000D923F with 0x00 and 0x000D9240 with 0x80
