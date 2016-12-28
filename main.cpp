@@ -125,6 +125,11 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
                          10, 100, 200, 25,
                          hwnd, (HMENU) 4, NULL, NULL
                          );
+            CreateWindow(TEXT("button"), TEXT("Increase object selection limit"),
+                         WS_VISIBLE | WS_CHILD | BS_CHECKBOX,
+                         10, 125, 275, 25,
+                         hwnd, (HMENU) 5, NULL, NULL
+                         );
 
                          break;
 
@@ -161,6 +166,18 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
 	    }
         }
 
+        if(LOWORD(wParam) == 5){//Remove object selection limit
+
+	    if (IsDlgButtonChecked(hwnd, 5)) {
+	        CheckDlgButton(hwnd, 5, BST_UNCHECKED);
+
+	    } else {
+		 CheckDlgButton(hwnd, 5, BST_CHECKED);
+
+	    }
+        }
+
+
 
             if(LOWORD(wParam) == 1){
 
@@ -195,6 +212,13 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
 			if (IsDlgButtonChecked(hwnd, 4)) { //Flight checkbox
                 if(position==0x000FF3BF || position ==0x000FF426){
                     array[position]=0xEB;
+                }
+			}
+			if (IsDlgButtonChecked(hwnd, 5)) { //Remove object selection limit checkbox
+                if(position==0x000D923F){
+                    array[position]=0x00;
+                }else if(position==0x000D9240){
+                    array[position]=0x80;
                 }
 			}
 
